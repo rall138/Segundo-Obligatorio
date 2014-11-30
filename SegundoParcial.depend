@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1412294351 source:/home/ricardo/CodeBlockProjects/SegundoParcial/boolean.cpp
+	"boolean.h"
+	<stdio.h>
+
+1412294958 /home/ricardo/CodeBlockProjects/SegundoParcial/boolean.h
+	<stdio.h>
+
+1416958318 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consulta.cpp
+
+1416958050 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consultas.cpp
+
+1417129576 source:/home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.cpp
+	"evaluacion.h"
+
+1417131372 /home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.h
+	"string.h"
+
+1417131608 /home/ricardo/CodeBlockProjects/SegundoParcial/string.h
+	<stdio.h>
+	"boolean.h"
+
+1417128879 source:/home/ricardo/CodeBlockProjects/SegundoParcial/fecha.cpp
+	"fecha.h"
+
+1417128885 /home/ricardo/CodeBlockProjects/SegundoParcial/fecha.h
+	"boolean.h"
+
+1417286991 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
+	<iostream>
+	"paciente.h"
+
+1416958762 source:/home/ricardo/CodeBlockProjects/SegundoParcial/manejo_archivos.cpp
+
+1416956778 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacientes.cpp
+
+1417128305 source:/home/ricardo/CodeBlockProjects/SegundoParcial/string.cpp
+	"string.h"
+	<stdio.h>
+
+1417293107 source:/home/ricardo/CodeBlockProjects/SegundoParcial/paciente.cpp
+	"paciente.h"
+
+1417293163 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
+	"string.h"
+
