@@ -2,7 +2,7 @@
 #define CONSULTAS_H_INCLUDED
 #include "consulta.h"
 
-/* --Puntero de la colección dinámica de consultas-- */
+/* Puntero de la colección dinámica de consultas */
 Consulta * consultas;
 
 void consCrear(consultas &Cons, int cantidadElementos);
