@@ -2,22 +2,27 @@
 
 Paciente pacCrear()
 {
+    printf("\n== Formulario de paciente ==");
     Paciente pac;
-    printf("\nIngrese el nombre:");
+    printf("\nNombre: ");
+    strCrear(pac.Nombre);
     strCargar(pac.Nombre);
-    printf("\nIngrese el apellido:");
+    printf("Apellido: ");
+    strCrear(pac.Apellido);
     strCargar(pac.Apellido);
-    printf("\nIngrese el domicilio:");
+    printf("Domicilio: ");
+    strCrear(pac.Domicilio);
     strCargar(pac.Domicilio);
-    printf("\nIngrese cedula:");
+    printf("Cedula: ");
     scanf("%ld", &pac.Cedula);
-    printf("\nIngrese telefono:");
+    printf("Telefono: ");
     scanf("%ld", &pac.Telefono);
     return pac;
 }
 
 void pacMostrarPaciente(Paciente Pac)
 {
+    printf("\n== Datos de paciente ==");
     printf("\nNombre: ");
     strMostrar(Pac.Nombre);
     printf("\nApellido: ");

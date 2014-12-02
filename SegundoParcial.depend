@@ -1,46 +1,127 @@
 # depslib dependency file v1.0
-1412294351 source:/home/ricardo/CodeBlockProjects/SegundoParcial/boolean.cpp
-	"boolean.h"
-	<stdio.h>
-
-1412294958 /home/ricardo/CodeBlockProjects/SegundoParcial/boolean.h
-	<stdio.h>
-
-1416958318 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consulta.cpp
-
-1416958050 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consultas.cpp
-
-1417129576 source:/home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.cpp
-	"evaluacion.h"
-
-1417131372 /home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.h
-	"string.h"
-
-1417131608 /home/ricardo/CodeBlockProjects/SegundoParcial/string.h
-	<stdio.h>
-	"boolean.h"
-
-1417128879 source:/home/ricardo/CodeBlockProjects/SegundoParcial/fecha.cpp
-	"fecha.h"
-
-1417128885 /home/ricardo/CodeBlockProjects/SegundoParcial/fecha.h
-	"boolean.h"
-
-1417286991 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
+1417373067 source:c:\users\fabiana\documents\segundoparcial\main.cpp
 	<iostream>
 	"paciente.h"
 
-1416958762 source:/home/ricardo/CodeBlockProjects/SegundoParcial/manejo_archivos.cpp
+1417400432 h"
 
-1416956778 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacientes.cpp
+1417400432 source:c:\users\fabiana\documents\segundoparcial\consulta.cpp
+	"consulta.h"
 
-1417128305 source:/home/ricardo/CodeBlockProjects/SegundoParcial/string.cpp
+1417392268 source:c:\users\fabiana\documents\segundoparcial\consultas.cpp
+
+1417373015 source:c:\users\fabiana\documents\segundoparcial\boolean.cpp
+	"boolean.h"
+	<stdio.h>
+
+1417373232 
+
+1417373751 c:\users\fabiana\documents\segundoparcial\boolean.h
+	<stdio.h>
+
+1417373191 source:c:\users\fabiana\documents\segundoparcial\evaluacion.cpp
+	"evaluacion.h"
+
+1417373191 n.h"
+
+1417373128 c:\users\fabiana\documents\segundoparcial\evaluacion.h
+	"string.h"
+
+1417401506 c:\users\fabiana\documents\segundoparcial\string.h
+	<stdio.h>
+	"boolean.h"
+
+1417373218 "
+
+1417373050 source:c:\users\fabiana\documents\segundoparcial\fecha.cpp
+	"fecha.h"
+
+1417373218 c:\users\fabiana\documents\segundoparcial\fecha.h
+	"boolean.h"
+
+1417373232 c:\users\fabiana\documents\segundoparcial\paciente.h
+	"string.h"
+
+1417373412 source:c:\users\fabiana\documents\segundoparcial\paciente.cpp
+	"paciente.h"
+
+1417373088 source:c:\users\fabiana\documents\segundoparcial\pacienteabb.cpp
+	"pacienteABB.h"
+
+1417373088 BB.h"
+
+1417400432 c:\users\fabiana\documents\segundoparcial\pacienteabb.h
+	"paciente.h"
+
+1417373280 source:c:\users\fabiana\documents\segundoparcial\string.cpp
 	"string.h"
 	<stdio.h>
 
-1417293107 source:/home/ricardo/CodeBlockProjects/SegundoParcial/paciente.cpp
+1417400432 c:\users\fabiana\documents\segundoparcial\consulta.h
+	"evaluacion.h"
+	"fecha.h"
+	"datosConsultas.h"
+
+1417400432 ultas.h"
+
+1417396711 c:\users\fabiana\documents\segundoparcial\datosconsultas.h
+	"evaluacion.h"
+	"fecha.h"
+
+1417475720 source:/home/ricardo/CodeBlockProjects/SegundoParcial/boolean.cpp
+	"boolean.h"
+	<stdio.h>
+
+1417373751 /home/ricardo/CodeBlockProjects/SegundoParcial/boolean.h
+	<stdio.h>
+
+1417373191 source:/home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.cpp
+	"evaluacion.h"
+
+1417373128 /home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.h
+	"string.h"
+
+1417482371 /home/ricardo/CodeBlockProjects/SegundoParcial/string.h
+	<stdio.h>
+	"boolean.h"
+
+1417373050 source:/home/ricardo/CodeBlockProjects/SegundoParcial/fecha.cpp
+	"fecha.h"
+
+1417373218 /home/ricardo/CodeBlockProjects/SegundoParcial/fecha.h
+	"boolean.h"
+
+1417482866 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
 	"paciente.h"
 
-1417293163 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
+1417477681 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
 	"string.h"
+
+1417482951 source:/home/ricardo/CodeBlockProjects/SegundoParcial/paciente.cpp
+	"paciente.h"
+
+1417474509 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consulta.cpp
+	"consulta.h"
+
+1417474404 /home/ricardo/CodeBlockProjects/SegundoParcial/consulta.h
+	"evaluacion.h"
+	"fecha.h"
+	"datosConsultas.h"
+
+1417475855 /home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.h
+	"evaluacion.h"
+	"fecha.h"
+
+1417475810 source:/home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.cpp
+	"datosConsultas.h"
+
+1417483700 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.cpp
+	"pacienteABB.h"
+
+1417401049 /home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.h
+	"paciente.h"
+
+1417482583 source:/home/ricardo/CodeBlockProjects/SegundoParcial/string.cpp
+	"string.h"
+	<stdio.h>
 

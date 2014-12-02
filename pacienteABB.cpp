@@ -6,11 +6,26 @@ Arbol arbCrear()
     return arb;
 }
 
-void arbDestruir(Arbol &arb);
-int arbContarNodos(Arbol arb);
+void arbDestruir(Arbol &arb)
+{
+    delete arb;
+    arb = NULL;
+}
 
-BOOLEAN arbEsArbolVacio(Arbol arb);
-void arbMostrar(Arbol arb);
+int arbContarNodos(Arbol arb)
+{
+    if (arb == NULL)
+        return 0;
+    else
+        return 1 + (arbContarNodos(arb->hizq) + arbContarNodos(arb->hder));
+}
+
+BOOLEAN arbEsArbolVacio(Arbol arb)
+{
+    if (arb == NULL)
+        return TRUE;
+    return FALSE;
+}
 
 /* Pre-condicion nodo debe encontrarse cargado
     y Arbol no debe ser nulo
@@ -49,3 +64,13 @@ void arbMostrar(Arbol arb)
     }
 }
 
+
+/*int conCantidadPacientesConApellido(Arbol arb,STRING apellido)
+{
+    if(arb==NULL)
+        return 0;
+    else if (streq((pacObtengoApellido(arb->Pac, Apellido)),apellido))
+        return (1+ conCantidadPacientesConApellido(arb->hizq,apellido)+ conCantidadPacientesConApellido(arb->hder,apellido));
+}
+
+*/

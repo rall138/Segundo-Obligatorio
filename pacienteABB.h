@@ -20,4 +20,6 @@ void arbInsertarNodo(Arbol &arb, Paciente Pac);
 BOOLEAN arbEsArbolVacio(Arbol arb);
 void arbMostrar(Arbol arb);
 
+int conCantidadPacientesConApellido(Arbol arb,STRING apellido);
+
 #endif

@@ -4,11 +4,10 @@
 
 typedef struct
 {
-
-    long int Cedula;
     STRING Nombre;
     STRING Apellido;
     STRING Domicilio;
+    long int Cedula;
     long int Telefono;
 
 }Paciente;

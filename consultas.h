@@ -2,8 +2,11 @@
 #define CONSULTAS_H_INCLUDED
 #include "consulta.h"
 
-/* Puntero de la colecci√≥n din√°mica de consultas */
-Consulta * consultas;
+// Puntero de la colecciÛn din·mica de consultas
+
+typedef Consulta * Consul;
+
+Consul * consultas;
 
 void consCrear(consultas &Cons, int cantidadElementos);
 void consDestruir(consultas &Cons);
@@ -16,4 +19,4 @@ int conCantidadPacientesConApellido(Consultas Cons);
 long int conObtenerCedulaPacienteConMayorCantidadConsultas(Consultas Cons);
 void conDatosPacientesConMayorMenorCedula(Consultas Cons);
 
-#ifndef
+#endif

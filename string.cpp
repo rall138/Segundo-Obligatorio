@@ -3,7 +3,7 @@
 
 void strCrear(STRING &str)
 {
-    str = new char[0];
+    str = new char[TAM];
     str[0] ='\0';
 }
 
@@ -26,13 +26,11 @@ void strMostrar(STRING str)
 void strCargar(STRING &str)
 {
     int index = 0;
-    char caracter;
-    scanf("%c",&caracter);
-    while(caracter !='\n' && index < TAM)
+    scanf(" %c",&str[index]);
+    while(str[index]!='\n' && index < TAM)
     {
-        str[index] = caracter;
         index++;
-        scanf("%c",&caracter);
+        scanf("%c",&str[index]);
     }
 
     str[index] ='\0';
@@ -48,4 +46,20 @@ void strcop(STRING &str1, STRING str2)
     }
 
     str1[index - 1] = '\0';
+}
+
+BOOLEAN streq(STRING s1,STRING s2)
+{
+    int i=0;
+    BOOLEAN iguales = TRUE;
+    while (iguales && (s1[i]!='\0') && (s2[i]!='\0'))
+    {
+        if (s1[i]!=s2[i])
+            iguales = FALSE;
+        i++;
+    }
+    if ((s1[i]!='\0') || (s2[i]!='\0'))
+        iguales = FALSE;
+
+    return iguales;
 }
