@@ -91,8 +91,9 @@
 1417373218 /home/ricardo/CodeBlockProjects/SegundoParcial/fecha.h
 	"boolean.h"
 
-1417482866 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
+1417485386 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
 	"paciente.h"
+	"pacienteABB.h"
 
 1417477681 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
 	"string.h"
@@ -115,7 +116,7 @@
 1417475810 source:/home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.cpp
 	"datosConsultas.h"
 
-1417483700 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.cpp
+1417486416 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.cpp
 	"pacienteABB.h"
 
 1417401049 /home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.h

@@ -2,7 +2,7 @@
 
 Arbol arbCrear()
 {
-    Arbol arb = new Nodo;
+    Arbol arb = NULL;
     return arb;
 }
 
@@ -34,7 +34,7 @@ void arbInsertarNodo(Arbol &arb, Paciente Pac)
 {
     if(arb == NULL)
     {
-        arb = arbCrear();
+        arb = new Nodo;
         arb->Pac = Pac;
         arb->hder = NULL;
         arb->hizq = NULL;

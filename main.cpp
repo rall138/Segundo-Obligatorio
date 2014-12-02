@@ -3,11 +3,18 @@
 
 int main()
 {
-    //Crear paciente
+    /* Crear paciente */
     Paciente pac = pacCrear();
-    pacMostrarPaciente(pac);
     Arbol arb = arbCrear();
+
+    /* Insercion de nodo al arbol */
     arbInsertarNodo(arb, pac);
+
+    /* Conteo de nodo existentes */
+    printf("((Cantidad de nodos: %d))", arbContarNodos(arb));
     arbMostrar(arb);
+
+    arbDestruir(arb);
+
     return 0;
 }
