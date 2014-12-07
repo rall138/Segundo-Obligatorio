@@ -11,7 +11,8 @@ void strCrear(STRING &str);
 void strDestruir(STRING &str);
 void strMostrar(STRING str);
 void strCargar(STRING &str);
-void strcop(STRING &str1, STRING str2);
-BOOLEAN streq(STRING s1,STRING s2);
+int strlar(STRING str);
+void strCop(STRING &str1, STRING str2);
+BOOLEAN strEq(STRING str1,STRING str2);
 
 #endif // STRING_H_INCLUDED

@@ -81,7 +81,7 @@
 1417373128 /home/ricardo/CodeBlockProjects/SegundoParcial/evaluacion.h
 	"string.h"
 
-1417482371 /home/ricardo/CodeBlockProjects/SegundoParcial/string.h
+1417977827 /home/ricardo/CodeBlockProjects/SegundoParcial/string.h
 	<stdio.h>
 	"boolean.h"
 
@@ -91,38 +91,68 @@
 1417373218 /home/ricardo/CodeBlockProjects/SegundoParcial/fecha.h
 	"boolean.h"
 
-1417485386 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
-	"paciente.h"
-	"pacienteABB.h"
+1417973238 source:/home/ricardo/CodeBlockProjects/SegundoParcial/main.cpp
+	"archivoPacientesABB.h"
+	"consulta.h"
+	"menu.h"
 
-1417477681 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
+1417896187 /home/ricardo/CodeBlockProjects/SegundoParcial/paciente.h
 	"string.h"
 
-1417482951 source:/home/ricardo/CodeBlockProjects/SegundoParcial/paciente.cpp
+1417899171 source:/home/ricardo/CodeBlockProjects/SegundoParcial/paciente.cpp
 	"paciente.h"
 
-1417474509 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consulta.cpp
+1417769167 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consulta.cpp
 	"consulta.h"
 
-1417474404 /home/ricardo/CodeBlockProjects/SegundoParcial/consulta.h
+1417732605 /home/ricardo/CodeBlockProjects/SegundoParcial/consulta.h
 	"evaluacion.h"
 	"fecha.h"
 	"datosConsultas.h"
 
-1417475855 /home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.h
+1417561783 /home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.h
 	"evaluacion.h"
 	"fecha.h"
 
-1417475810 source:/home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.cpp
+1417892139 source:/home/ricardo/CodeBlockProjects/SegundoParcial/datosConsultas.cpp
 	"datosConsultas.h"
 
-1417486416 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.cpp
+1417977807 source:/home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.cpp
 	"pacienteABB.h"
 
-1417401049 /home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.h
+1417961840 /home/ricardo/CodeBlockProjects/SegundoParcial/pacienteABB.h
 	"paciente.h"
 
-1417482583 source:/home/ricardo/CodeBlockProjects/SegundoParcial/string.cpp
+1417959754 source:/home/ricardo/CodeBlockProjects/SegundoParcial/string.cpp
 	"string.h"
+
+1417392268 source:/home/ricardo/CodeBlockProjects/SegundoParcial/consultas.cpp
+
+1417732160 source:/home/ricardo/CodeBlockProjects/SegundoParcial/menu.cpp
+	"menu.h"
 	<stdio.h>
+
+1417562193 /home/ricardo/CodeBlockProjects/SegundoParcial/menu.h
+
+1417916879 source:/home/ricardo/CodeBlockProjects/SegundoParcial/archivo.cpp
+	"archivo.h"
+
+1417896141 /home/ricardo/CodeBlockProjects/SegundoParcial/Archivo.h
+	"pacienteABB.h"
+
+1417898976 /home/ricardo/CodeBlockProjects/SegundoParcial/archivo.h
+	"string.h"
+
+1417957902 source:/home/ricardo/CodeBlockProjects/SegundoParcial/archivoPacientesABB.cpp
+	"archivoPacientesABB.h"
+
+1417957655 /home/ricardo/CodeBlockProjects/SegundoParcial/archivoPacientesABB.h
+	"archivoPaciente.h"
+
+1417957621 /home/ricardo/CodeBlockProjects/SegundoParcial/archivoPaciente.h
+	"archivo.h"
+	"pacienteABB.h"
+
+1417957874 source:/home/ricardo/CodeBlockProjects/SegundoParcial/archivoPaciente.cpp
+	"archivoPaciente.h"
 

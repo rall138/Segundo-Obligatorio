@@ -17,5 +17,7 @@ void conObtengoDescripcion(DatosConsulta Con, STRING &Descripcion);
 Fecha conObtengoFecha(DatosConsulta Con);
 EVALUACION conObtengoEvaluacion(DatosConsulta Con);
 long int conObtengoCedula(DatosConsulta Con);
+void Bajar_DatosConsulta (DatosConsulta Con, FILE * f );
+void Levantar_DatosConsulta(DatosConsulta &Con, FILE * f );
 
 #endif

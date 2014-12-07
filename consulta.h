@@ -19,11 +19,15 @@ BOOLEAN vacia(ListaConsultas Cons);
 void consDestruir(ListaConsultas &Cons);
 void consGrabarConsultasEnArchivo(ListaConsultas Cons);
 void consObtenerConsultasDeArchivo(ListaConsultas &Cons);
+void consMostrarConsultas(ListaConsultas Cons);
 
 int conCantidadConsultasMayoresAFecha(ListaConsultas Cons, Fecha fecha);
 void conCantidadDeConsultasDeCadaTipo(ListaConsultas Cons);
 
 long int conObtenerCedulaPacienteConMayorCantidadConsultas(ListaConsultas Cons);
 void conDatosPacientesConMayorMenorCedula(ListaConsultas Cons);
+
+void Bajar_Consulta (ListaConsultas Cons , STRING nomArch);
+void Levantar_Consulta (ListaConsultas &Cons, STRING nomArch);
 
 #endif

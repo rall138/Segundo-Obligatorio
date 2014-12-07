@@ -40,17 +40,17 @@ long int pacObtengoCedula(Paciente Pac)
 
 void pacObtengoNombre(Paciente Pac, STRING &Nombre)
 {
-    strcop(Pac.Nombre, Nombre);
+    strCop(Pac.Nombre, Nombre);
 }
 
 void pacObtengoApellido(Paciente Pac, STRING &Apellido)
 {
-    strcop(Pac.Apellido, Apellido);
+    strCop(Apellido, Pac.Apellido);
 }
 
 void pacObtengoDomicilio(Paciente Pac, STRING &Domicilio)
 {
-    strcop(Pac.Domicilio, Domicilio);
+    strCop(Pac.Domicilio, Domicilio);
 }
 
 long int pacObtengoTelefono(Paciente Pac)

@@ -14,12 +14,19 @@ typedef struct Nodo_
 typedef Nodo * Arbol;
 
 Arbol arbCrear();
+void arbMostrar(Arbol arb);
 void arbDestruir(Arbol &arb);
 int arbContarNodos(Arbol arb);
-void arbInsertarNodo(Arbol &arb, Paciente Pac);
 BOOLEAN arbEsArbolVacio(Arbol arb);
-void arbMostrar(Arbol arb);
+void arbInsertarNodo(Arbol &arb, Paciente Pac);
+Arbol arbCargarMedianteArchivo();
 
-int conCantidadPacientesConApellido(Arbol arb,STRING apellido);
+/* == Manejo de pacientes == */
+long int arbMenorCi(Arbol arb);
+long int arbMayorCi(Arbol arb);
+void arblistarPacienteMedianteCedula(Arbol arb, long int cedulaIdentidad);
+void arblistarPacientesOrdenadosPorCedula(Arbol arb);
+int arbCantidadPacientesConMismoApellido(Arbol arb,STRING apellido);
+BOOLEAN arbExistePaciente(Arbol arb, long int cedula);
 
 #endif

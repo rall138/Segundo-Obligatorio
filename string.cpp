@@ -1,5 +1,4 @@
 #include "string.h"
-#include <stdio.h>
 
 void strCrear(STRING &str)
 {
@@ -25,41 +24,59 @@ void strMostrar(STRING str)
 
 void strCargar(STRING &str)
 {
-    int index = 0;
-    scanf(" %c",&str[index]);
-    while(str[index]!='\n' && index < TAM)
+    STRING aux;
+    strCrear(aux);
+    int i=0;
+    char c;
+    fflush(stdin);
+    scanf(" %c",&c);
+    while ((c!='\n') && (i<TAM))
     {
-        index++;
-        scanf("%c",&str[index]);
+        aux[i]=c;
+        i++;
+        scanf("%c",&c);
     }
+    aux[i]='\0';
 
-    str[index] ='\0';
+    strCop(str,aux);
+    strDestruir(aux);
 }
 
-void strcop(STRING &str1, STRING str2)
+void strCop(STRING &str1, STRING str2)
 {
-    int index = 0;
-    while(str2[index] != '\0')
+    int i = 0;
+    int largo = strlar(str2) + 1;
+    while (str2[i] != '\0')
     {
-        str1[index] = str2[index];
-        index++;
+        str1[i] = str2[i];
+        i++;
     }
 
-    str1[index - 1] = '\0';
+    str1[i] = '\0';
+
 }
 
-BOOLEAN streq(STRING s1,STRING s2)
+BOOLEAN strEq(STRING str1,STRING str2)
 {
     int i=0;
     BOOLEAN iguales = TRUE;
-    while (iguales && (s1[i]!='\0') && (s2[i]!='\0'))
+    while (iguales && (str1[i]!='\0') && (str2[i]!='\0'))
     {
-        if (s1[i]!=s2[i])
+        if (str1[i]!=str2[i])
             iguales = FALSE;
         i++;
     }
-    if ((s1[i]!='\0') || (s2[i]!='\0'))
+
+    if ((str1[i]!='\0') || (str2[i]!='\0'))
         iguales = FALSE;
 
     return iguales;
+}
+
+int strlar(STRING s)
+{
+    int i=0;
+    while (s[i] != '\0')
+        i++;
+    return i;
 }

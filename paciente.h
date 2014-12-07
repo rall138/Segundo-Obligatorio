@@ -20,5 +20,8 @@ void pacObtengoApellido(Paciente Pac, STRING &Apellido);
 void pacObtengoDomicilio(Paciente Pac, STRING &Domicilio);
 long int pacObtengoTelefono(Paciente Pac);
 void pacMostrarPaciente(Paciente Pac);
+void Bajar_Paciente (Paciente Pac, FILE * f);
+void Levantar_Paciente(Paciente &Pac);
+
 
 #endif

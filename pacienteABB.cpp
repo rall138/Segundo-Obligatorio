@@ -64,13 +64,93 @@ void arbMostrar(Arbol arb)
     }
 }
 
-
-/*int conCantidadPacientesConApellido(Arbol arb,STRING apellido)
+long int arbMenorCi(Arbol arb)
 {
-    if(arb==NULL)
-        return 0;
-    else if (streq((pacObtengoApellido(arb->Pac, Apellido)),apellido))
-        return (1+ conCantidadPacientesConApellido(arb->hizq,apellido)+ conCantidadPacientesConApellido(arb->hder,apellido));
+    long int menorCedula;
+    if(arb != NULL)
+    {
+        if(arb->hizq == NULL)
+            menorCedula = pacObtengoCedula(arb->Pac);
+        else
+            arbMenorCi(arb->hizq);
+    }
+
+    return menorCedula;
 }
 
-*/
+long int arbMayorCi(Arbol arb)
+{
+    long int mayorCedula;
+
+    if(arb != NULL)
+    {
+        if(arb->hder == NULL)
+            mayorCedula = pacObtengoCedula(arb->Pac);
+        else
+            arbMayorCi(arb->hder);
+    }
+
+    return mayorCedula;
+}
+
+void arblistarPacienteMedianteCedula(Arbol arb, long int cedulaIdentidad)
+{
+    if(arb != NULL)
+    {
+        if(pacObtengoCedula(arb->Pac) == cedulaIdentidad)
+            pacMostrarPaciente(arb->Pac);
+        else
+        {
+            if(pacObtengoCedula(arb->Pac) > cedulaIdentidad)
+                 arblistarPacienteMedianteCedula(arb->hizq , cedulaIdentidad);
+            else
+                arblistarPacienteMedianteCedula(arb->hder , cedulaIdentidad);
+        }
+    }
+}
+
+void arblistarPacientesOrdenadosPorCedula(Arbol arb)
+{
+    if (arb != NULL)
+    {
+        if (arb->hizq != NULL)
+            arblistarPacientesOrdenadosPorCedula(arb->hizq);
+
+        pacMostrarPaciente(arb->Pac);
+
+        if (arb->hder != NULL)
+            arblistarPacientesOrdenadosPorCedula(arb->hder);
+    }
+}
+
+BOOLEAN arbExistePaciente(Arbol arb, long int cedula)
+{
+    if (arb != NULL)
+    {
+        if (pacObtengoCedula(arb->Pac) == cedula)
+            return TRUE;
+        else if (cedula < pacObtengoCedula(arb->Pac))
+            arbExistePaciente(arb->hizq, cedula);
+        else if (cedula > pacObtengoCedula(arb->Pac))
+            arbExistePaciente(arb->hder, cedula);
+
+        return FALSE;
+    }
+}
+
+int arbCantidadPacientesConMismoApellido(Arbol arb,STRING apellido)
+{
+    if (arb != NULL)
+    {
+        STRING auxApellido;
+        strCrear(auxApellido);
+        pacObtengoApellido(arb->Pac, auxApellido);
+        if (strEq(arb->Pac.Apellido, apellido))
+            return 1 + arbCantidadPacientesConMismoApellido(arb->hizq, apellido) +
+                            arbCantidadPacientesConMismoApellido(arb->hder, apellido);
+        else
+            return arbCantidadPacientesConMismoApellido(arb->hizq, apellido) +
+                arbCantidadPacientesConMismoApellido(arb->hder, apellido);
+        strDestruir(auxApellido);
+    }
+}
